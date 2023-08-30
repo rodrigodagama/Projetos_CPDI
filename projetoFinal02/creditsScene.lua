@@ -30,7 +30,6 @@ local function showCredits(sceneGroup)
         text = [[Equipe de Desenvolvimento:
 
 Rodrigo da Gama
-Flavia de Souza
 Alexandre Tourinho
 Matheus Moraes
 Paulo Roberto Nunes da Cruz

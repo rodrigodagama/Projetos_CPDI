@@ -4,8 +4,8 @@ local scene = composer.newScene()
 local truck
 local trashGroup = {}
 local trashTimer
-local score = 0
-local lives = 3
+local Pontuação = 0
+local Vidas = 3
 local scoreText
 local livesText
 
