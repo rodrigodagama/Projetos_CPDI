@@ -4,8 +4,8 @@ local scene = composer.newScene()
 local truck
 local trashGroup = {}
 local trashTimer
-local Pontuação = 0
-local Vidas = 3
+local score = 0
+local lives = 3
 local scoreText
 local livesText
 
@@ -124,7 +124,7 @@ function scene:create(event)
     truck.y = display.contentHeight - truck.height * 1.5
     truck.rotation = 89
 
-    scoreText = display.newText(sceneGroup, "Score: " .. score, display.contentWidth * 0.5, 30, native.systemFontBold, 24)
+    scoreText = display.newText(sceneGroup, "Pontuação: " .. score, display.contentWidth * 0.5, 30, native.systemFontBold, 24)
     livesText = display.newText(sceneGroup, "Vidas: " .. lives, display.contentWidth * 0.5, 70, native.systemFontBold, 24)
 
     truck:addEventListener("touch", onTruckTouch)
