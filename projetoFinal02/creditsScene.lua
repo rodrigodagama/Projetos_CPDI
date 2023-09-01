@@ -31,8 +31,9 @@ local function showCredits(sceneGroup)
 
 Rodrigo da Gama
 Alexandre Tourinho
-Matheus Moraes
 Paulo Roberto Nunes da Cruz
+Flavia Souza
+Matheus Moraes
 
 Recursos Utilizados:
 
@@ -45,8 +46,8 @@ Agradecimentos:
 
 CPDI - Comitê para Democratização da Informática
 Professora: Juliana Oliveira
-Cordenadora: Cleusa Kreusch
-Assistente Social: Neida]],
+Coordenadora: Cleusa Kreusch
+Assistente Social: Neida Silveira de Souza]],
         x = 0,
         y = 10,
         width = display.contentWidth - 20,
