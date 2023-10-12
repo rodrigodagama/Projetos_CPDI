@@ -62,12 +62,6 @@ header {
     background-color: var(--gold);
 }
 
-
-
-
-
-
-/***** BANNER *****/
 .banner {
     width: 100%;
     min-height: 100vh;
@@ -423,25 +417,74 @@ footer {
     }
 
     footer {
-        background-color: #252525; /* Cor de fundo do rodapé */
-        color: white; /* Cor do texto no rodapé */
-        padding: 20px; /* Espaçamento interno para o rodapé */
-        text-align: center; /* Centralizar o conteúdo do rodapé */
+        background-color: #252525; 
+        color: white; 
+        padding: 20px; 
+        text-align: center; 
     
-        /* Estilos para o texto na div "rights" */
         .rights {
             font-size: 14px;
         }
     }
     
-    /* Estilos para a div "contact-info" dentro do rodapé */
     .contact-info {
-        margin-bottom: 20px; /* Espaçamento entre a div "contact-info" e "rights" */
+        margin-bottom: 20px; 
     }
     
-    /* Estilos para os parágrafos dentro da div "contact-info" */
     .contact-info p {
-        margin: 0; /* Remover margens padrão dos parágrafos */
+        margin: 0; 
     }
+
+    .devs-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        height: 480px;
+    }
+    
+    .dev {
+        text-align: center;
+        margin: auto;
+    }
+
+    .dev-name {
+        background-color: var(--bgGray);
+        color: var(--gold);
+        padding: 20px;
+        border-radius: 20px;
+        margin: 0 auto 20px; /* Adiciona espaço entre o nome e os ícones sociais */
+        max-width: 80%;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .dev-title {
+        text-align: center;
+        margin: auto;
+    }
+    
+    .social-icons a {
+        color: #0077B5;
+        font-size: 20px;
+        background-color: var(--bgGray);
+        color: var(--gold);
+        padding: 20px;
+        border-radius: 20px;
+        margin: 20px auto 50px; /* Adiciona espaço entre os ícones sociais e o próximo elemento */
+        max-width: 60%;
+    }
+    
+    .social-icons a:hover {
+        color: #000;
+        margin: auto;
+    }
+
+    .dev img {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 20px; /* Adiciona espaço entre a imagem e o nome */
+    }
+    
 
 }
