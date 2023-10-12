@@ -1,4 +1,4 @@
-<h1>Rodrigo da Gama</h1>
+<h1 a href="https://www.linkedin.com/in/rodrigodagama/">Rodrigo da Gama</h1>
 ©2023 Rodrigo da gama. Todos os direitos reservados.
 
 
