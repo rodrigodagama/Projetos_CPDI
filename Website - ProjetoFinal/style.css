@@ -22,8 +22,6 @@ body {
 }
 
 
-/* HEADER & NAV */
-
 header {
     background-color: var(--bgColor);
 }
@@ -125,7 +123,6 @@ header {
 }
 
 
-/***** ARTICLE SECTION *****/
 .items-section {
     padding: 2em;
     background-color: var(--bgGray);
@@ -171,17 +168,15 @@ header {
 }
 
 
-/* Estilizar links visitados */
 .item--content-button:visited {
-    background-color: var(--gold); /* Cor de fundo em visitado (branco) */
-    color: var(--gold); /* Cor do texto em visitado (preto) */
-    border: 1px solid rgba(0, 0, 139, 0.336); /* Cor da borda em visitado (preto) */
+    background-color: var(--gold);
+    color: var(--gold);
+    border: 1px solid rgba(0, 0, 139, 0.336);
 }
 
-/* Estilizar links quando passar o mouse por cima */
 .item--content-button:hover {
-    background-color: rgba(0, 0, 139, 0.336); /* Cor de fundo ao passar o mouse por cima */
-    color: rgba(255, 255, 255, 0.336); /* Cor do texto ao passar o mouse por cima */
+    background-color: rgba(0, 0, 139, 0.336);
+    color: rgba(255, 255, 255, 0.336);
 }
 
 .item--content-text::after {
@@ -194,7 +189,6 @@ header {
 }
 
 
-/***** ITEMS OR CARDS SECTION *****/
 .section {
     padding: 1.5em;
     background-color: var(--bgColor);
@@ -226,7 +220,6 @@ header {
 
 
 
-/***** ABOUT SECTION *****/
 .about-section {
     padding: 5em 0;
     min-height: 100vh;
@@ -490,8 +483,6 @@ footer {
     .dev img {
         width: 200px;
         height: 200px;
-        margin-bottom: 20px; /* Adiciona espaço entre a imagem e o nome */
+        margin-bottom: 20px;
     }
-    
-
 }
