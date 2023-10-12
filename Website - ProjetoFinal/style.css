@@ -96,6 +96,7 @@ header {
     cursor: pointer;
     outline: none;
     margin-top: 22em;
+    border-radius: 30px;
 }
 
 .banner-btn:hover {

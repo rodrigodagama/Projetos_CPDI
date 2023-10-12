@@ -1,11 +1,6 @@
-# GYM Landing Page
+<h1>Rodrigo da Gama</h1>
+© 2023 Rodrigo da gama. Todos os direitos reservados.
 
-<h1>Programador Designer Pro</h1>
-ツ ESPERO QUE VOCÊS APRECIEM!
 
-Compartilha, Siga-nos!
-
-<a href="https://www.instagram.com/programadordesignerpro/">Instagram</a>.
-<a href="https://t.me/programadordesignerpro">Telegram</a>.
-
-Ajuda muito o meu Trabalho.
+<a href="https://www.instagram.com/rodrigodagama/">Instagram</a>.
+<a href="https://www.linkedin.com/in/rodrigodagama/">Linkedin</a>.
