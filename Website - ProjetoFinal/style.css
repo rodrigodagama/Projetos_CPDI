@@ -97,13 +97,13 @@ header {
 }
 
 .banner-btn {
-    background-color: rgba(255, 255, 255, 0.384);
-    padding: 0.7em 2em;
+    padding: 0.625em 2em;
     font-size: 1.25em;
-    color: #000000;
+    background-color: var(--bgGray);
+    color: var(--gold);
     cursor: pointer;
     outline: none;
-    margin-top: 21em;
+    margin-top: 22em;
 }
 
 .banner-btn:hover {
@@ -170,7 +170,7 @@ header {
     padding: 0.625em 2em;
     font-size: 1.25em;
     background-color: transparent;
-    color: #fff;
+    color: var(--gold);
     cursor: pointer;
     outline: none;
     margin-top: 2em;
@@ -179,8 +179,8 @@ header {
 
 /* Estilizar links visitados */
 .item--content-button:visited {
-    background-color: #ffffff; /* Cor de fundo em visitado (branco) */
-    color: #ffffff; /* Cor do texto em visitado (preto) */
+    background-color: var(--gold); /* Cor de fundo em visitado (branco) */
+    color: var(--gold); /* Cor do texto em visitado (preto) */
     border: 1px solid rgba(0, 0, 139, 0.336); /* Cor da borda em visitado (preto) */
 }
 
