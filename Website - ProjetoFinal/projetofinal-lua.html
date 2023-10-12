@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Recycle Master</title>
+
+    <style>
+        body {
+            background-image: url(imagens/bgRecycleMaster.jpeg);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .titulo {
+            background-color: rgba(27, 172, 172, 0.6);
+            padding: 20px;
+            border-radius: 20px;
+            margin: 0 auto;
+            max-width: 40%;
+            text-align: center;
+            font-size: 28px;
+            font-family: 'Arimo', sans-serif;
+            font-family: 'Codystar', cursive;
+            font-family: 'Gamja Flower', cursive;
+            font-family: 'Kenia', cursive;
+            font-family: 'Raleway', sans-serif;
+            font-family: 'Red Rose', cursive;
+            font-family: 'Roboto', sans-serif;
+            border: 2px solid #ffffff;
+        }
+
+        #conteudo {
+            background-image: url(imagens/background-left-right.png);
+            background-repeat: no-repeat;
+            background-size: 280%;
+            padding: 30px;
+            border-radius: 20px;
+            margin: 20px 20px;
+            max-width: 90%;
+            font-size: larger;
+            font-weight: bold;
+            font-family: "Arial", sans-serif;
+            border: 2px solid #ffffff;
+        }
+
+        .personagens {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;            
+        }
+
+        .personagem {
+            background-color: rgba(27, 172, 172, 0.6);
+            padding: 30px;
+            border-radius: 20px;
+            max-width: calc(16.66% - 20px);
+            text-align: center;
+            font-size: larger;
+            font-weight: bold;
+            font-family: "Arial", sans-serif;
+            margin-bottom: 20px;
+            cursor: pointer;
+            border: 2px solid #ffffff;
+        }
+
+        .personagem img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ffffff;
+        }
+
+        .texto {
+            background-color: rgba(27, 172, 172, 0.6);
+            color: rgb(0, 0, 0);
+            padding: 30px;
+            margin: 10px;
+            border-radius: 20px;
+            max-width: calc(66.66% - 20px);
+            text-align:justify;
+            font-size: 16px;
+            font-family: 'Arimo', sans-serif;
+            font-family: 'Codystar', cursive;
+            font-family: 'Gamja Flower', cursive;
+            font-family: 'Kenia', cursive;
+            font-family: 'Raleway', sans-serif;
+            font-family: 'Red Rose', cursive;
+            font-family: 'Roboto', sans-serif;
+            border: 2px solid #ffffff;
+        }
+
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 1;
+            text-align: center;
+        }
+
+        .lightbox img {
+            max-height: 80%;
+            max-width: 80%;
+            margin: auto;
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+        }
+
+        .video {
+            background-color: rgba(27, 172, 172, 0.6);
+            padding: 20px;
+            border-radius: 20px;
+            max-width: 880px;
+            text-align: center;
+            font-size: larger;
+            font-weight: bold;
+            font-family: "Arial", sans-serif;
+            margin-bottom: 20px;
+            cursor: pointer;
+            border: 2px solid #ffffff;
+        }
+
+        .close {
+            background-color: white;
+            padding: 10px;
+            border-radius: 20px;
+            font-family: 'Arimo', sans-serif;
+            font-family: 'Codystar', cursive;
+            font-family: 'Gamja Flower', cursive;
+            font-family: 'Kenia', cursive;
+            font-family: 'Raleway', sans-serif;
+            font-family: 'Red Rose', cursive;
+            font-family: 'Roboto', sans-serif;
+            color: red;
+            font-size: 24px;
+            font-weight: bold; 
+            position: center; 
+            cursor: pointer;
+            border: 2px solid #ffffff;
+        }
+
+        .voltar {
+            background-color: rgba(27, 172, 172, 0.6);
+            padding: 20px;
+            border-radius: 20px;
+            margin: 0 auto;
+            max-width: 30%;
+            text-align: center;
+            font-size: 28px;
+            font-family: 'Arimo', sans-serif;
+            font-family: 'Codystar', cursive;
+            font-family: 'Gamja Flower', cursive;
+            font-family: 'Kenia', cursive;
+            font-family: 'Raleway', sans-serif;
+            font-family: 'Red Rose', cursive;
+            font-family: 'Roboto', sans-serif;
+            border: 2px solid #ffffff;
+        }
+
+        .github {
+            background-image: url(imagens/background-left-right.png);
+            padding: 10px;
+            border-radius: 20px;
+            margin-left: 140px;
+            margin-top: 70px;
+            max-width: 70%;
+            text-align: center;
+            font-size: 28px;
+            font-family: 'Arimo', sans-serif;
+            font-family: 'Codystar', cursive;
+            font-family: 'Gamja Flower', cursive;
+            font-family: 'Kenia', cursive;
+            font-family: 'Raleway', sans-serif;
+            font-family: 'Red Rose', cursive;
+            font-family: 'Roboto', sans-serif;
+            border: 2px solid #ffffff;
+        }
+
+        a:visited {
+        color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <h1 class="titulo">Jogo Recycle Master (Projeto Final LUA)</h1>
+    <div id="conteudo">
+        <div class="personagens">
+            <div class="personagem" onclick="openLightbox('imagens/projetofinal-lua/menu.JPG')">
+                <img src="imagens/projetofinal-lua/menu.JPG" alt="Menu">
+            </div>
+            <div class="personagem" onclick="openLightbox('imagens/projetofinal-lua/fase1.JPG')">
+                <img src="imagens/projetofinal-lua/fase1.JPG" alt="Fase 1">
+            </div>
+            <div class="personagem" onclick="openLightbox('imagens/projetofinal-lua/fase2.JPG')">
+                <img src="imagens/projetofinal-lua/fase2.JPG" alt="Fase 2">
+            </div>
+            <div class="personagem" onclick="openLightbox('imagens/projetofinal-lua/fase3.JPG')">
+                <img src="imagens/projetofinal-lua/fase3.JPG" alt="Fase 3">
+            </div>
+            <div class="personagem" onclick="openLightbox('imagens/projetofinal-lua/congratulation.JPG')">
+                <img src="imagens/projetofinal-lua/congratulation.JPG" alt="Congratulation">
+            </div>
+            <div class="personagem" onclick="openLightbox('imagens/projetofinal-lua/gameover.JPG')">
+                <img src="imagens/projetofinal-lua/gameover.JPG" alt="GameOver">
+            </div>
+            
+        </div>
+        <div class="video">
+            <iframe width="860" height="615" src="imagens/projetofinal-lua/Recycle Master - Video apresentação.mp4" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="texto">
+            <p>
+                <p><h2>Para jogar a fase 1:</h2></p>
+        
+                <p>Bem-vindo à emocionante jornada de reciclagem de basquete! Nesta fase, você será o defensor incansável da natureza, jogando lixos recicláveis nos cestos de reciclagem apropriados. Aqui está o que você precisa fazer para brilhar nessa tarefa:</p>
+                
+                <p>Na palma da sua mão, segure uma bola representando um lixo reciclável. Cada tipo de lixo corresponde a um cesto específico de reciclagem.</p> 
+                            
+                <p>Toque no cesto de reciclagem correspondente com o dedo para lançar a bola nele. Cada vez que você acertar o cesto correto, você ganhará 10 pontos.</p>
+                            
+                <p>A precisão é fundamental! Certifique-se de escolher o cesto certo para cada tipo de lixo. Se você errar, não ganhará pontos.</p>
+                            
+                <p>Sua meta é acumular 100 pontos para avançar para a próxima fase. À medida que você acerta os cestos, sua pontuação aumentará gradualmente. Fique focado e siga em frente!</p>
+                            
+                <p>Cuidado com suas vidas. Você começa com 3 vidas no total. Se você errar um arremesso e não acertar o cesto correto, perderá uma vida.</p>
+                            
+                <p>Para avançar, você precisa cumprir a pontuação mínima necessária. Continue acertando os cestos e reciclando com eficiência para atingir esse objetivo.</p>
+                            
+                <p>Lembre-se, a responsabilidade é sua! Se você esgotar todas as vidas, a fase acabará. Portanto, arremesse com precisão para evitar isso.</p>
+                
+                <p><h2>Para jogar a fase 2:</h2></p>
+                
+                <p>Para jogar a fase 2, você será o condutor habilidoso de um caminhão de lixo em uma missão importante de coleta. Sua tarefa é crucial: percorrer a cidade e recolher o lixo que est</p>á espalhado pelas ruas. Aqui está o que você precisa fazer para ter sucesso nessa tarefa:
+                
+                <p>Toque no caminhão de lixo e deslize o dedo para movê-lo para a esquerda ou direita. Mantenha-se atento, pois você precisa estar na posição certa para coletar o lixo à medida que avança.</p>
+                
+                <p>À medida que você dirige o caminhão, observe o lixo espalhado pelas ruas. Seja rápido e hábil para coletar o lixo tocando nele com o caminhão. A cada peça de lixo coletada, você ganhará 10 pontos.</p>
+                
+                <p>No entanto, tome cuidado para não perder nenhum lixo. Se você deixar o lixo para trás, sua pontuação permanecerá a mesma, mas você não ganhará pontos. Portanto, seja preciso e meticuloso em suas ações.</p>
+                
+                <p>Além disso, fique de olho nas suas vidas. Cada vez que você deixar um pedaço de lixo passar despercebido, perderá uma vida. Você começa com 3 vidas no total.</p>
+                
+                <p>O objetivo é acumular 100 pontos para avançar para a próxima fase. À medida que você coleta mais lixo, sua pontuação aumenta gradualmente. Mantenha o foco e continue coletando para atingir essa meta.</p>
+                
+                <p>Lembre-se de que suas ações têm impacto. Se você perder todas as suas vidas, o jogo chegará a um fim. Portanto, mantenha-se vigilante e colete com precisão para evitar que isso aconteça.</p>
+                
+                <p><h2>Para jogar a fase 3:</h2></p>
+                
+                <p>Para jogar a fase 3, você desempenhará um papel vital na última etapa do processo de reciclagem. Agora, como membro essencial da equipe de uma empresa de limpeza comprometida com a sustentabilidade, você deve ajudar a separar o lixo reciclável dos não recicláveis. Veja como fazer isso:</p>
+                
+                <p>Toque nos diferentes tipos de lixo que chegam à empresa de limpeza. Sua tarefa é separar o lixo reciclável, como plástico, papel, vidro e metal, dos resíduos não recicláveis.</p>
+                    
+                <p>Cada vez que você coloca um resíduo na cesta de reciclagem correta, você está contribuindo para a criação de um ciclo de reciclagem eficiente. Isso ajuda a conservar recursos naturais, reduzir a poluição e contribuir para um ambiente mais limpo.</p>
+                    
+                <p>Porém, atenção: se você colocar um resíduo na cesta errada, isso comprometerá o processo de reciclagem. A precisão é essencial, portanto, esteja certo de que está fazendo a escolha certa.</p>
+                    
+                <p>Seu objetivo é acumular 100 pontos para finalizar o jogo com sucesso. A cada resíduo reciclável corretamente separado, sua pontuação aumenta gradualmente. Mantenha-se focado e determinado para atingir esse objetivo.</p>
+                    
+                <p>No entanto, você tem um limite de vidas. Cada vez que você erra a separação, você perde uma vida. Mantenha-se atento e tome decisões conscientes para evitar perder todas as vidas.</p>
+
+                <h3 class="github"><a href="https://github.com/rodrigodagama/Projetos_CPDI-LUA/tree/main/projetoFinal02" target="_blank">GitHub: Jogo Recycle Master (Projeto Final LUA)</a></h3>
+            </p>
+        </div>
+
+    </div>
+
+    <h2 class="voltar"><a href="https://rodrigodagama.github.io/HTML-CSS-CPDI/Desafios/d012/">Voltar</a></h2>
+
+    <div class="lightbox" id="lightbox">
+        <img id="lightbox-image" src="" alt="Imagem Ampliada">
+        <span onclick="closeLightbox()" class="close">FECHAR</span>
+    </div>
+
+    <script>
+        function openLightbox(imageSrc) {
+            const lightbox = document.getElementById("lightbox");
+            const lightboxImage = document.getElementById("lightbox-image");
+            lightboxImage.src = imageSrc;
+            lightbox.style.display = "block";
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById("lightbox");
+            lightbox.style.display = "none";
+        }
+    </script>
+</body>
+</html>
