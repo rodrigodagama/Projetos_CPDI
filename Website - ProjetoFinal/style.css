@@ -481,6 +481,7 @@ footer {
     }
 
     .dev img {
+        border: 10px solid var(--bgGray);
         width: 200px;
         height: 200px;
         margin-bottom: 20px;
