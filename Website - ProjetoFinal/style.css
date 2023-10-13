@@ -60,20 +60,6 @@ header {
     background-color: var(--gold);
 }
 
-.banner {
-    width: 100%;
-    min-height: 100vh;
-    background-image: url(imagens/SGS\ Students\ Game\ Studio2.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
 
 .title {
     font-size: 3em;
@@ -218,7 +204,6 @@ header {
     line-height: 1.5;
     color: var(--softGray);
 }
-
 
 
 .about-section {
@@ -379,6 +364,7 @@ footer {
         grid-column-gap: 5px;
         max-width: 95vw;
     }
+    
 
     .contact {
         background-image: url(imagens/SGS\ Students\ Game\ Studio1.png);
@@ -390,6 +376,21 @@ footer {
         grid-column-gap: 20px;
         max-width: 100%;
         padding: 10px;
+    }
+
+    .banner {
+        width: 100%;
+        min-height: 100vh;
+        background-image: url(imagens/SGS\ Students\ Game\ Studio2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
     
     .input-container {
