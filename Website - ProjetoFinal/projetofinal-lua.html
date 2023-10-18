@@ -6,6 +6,14 @@
     <title>Jogo Recycle Master</title>
 
     <style>
+
+        :root {
+            --bgColor: #1a1e1f;
+            --bgGray: #262626;
+            --softGray: #a8a8a8;
+            --gold: #845e49;
+        }
+
         body {
             background-image: url(imagens/bgRecycleMaster.jpeg);
             background-attachment: fixed;
@@ -14,21 +22,18 @@
         }
 
         .titulo {
-            background-color: rgba(27, 172, 172, 0.6);
-            padding: 20px;
+            background-color: var(--bgGray);
+            padding: 10px 10px 10px 10px;
             border-radius: 20px;
-            margin: 0 auto;
-            max-width: 40%;
+            margin-left: 140px;
+            margin-top: 70px;
+            max-width: 70%;
             text-align: center;
-            font-size: 28px;
-            font-family: 'Arimo', sans-serif;
-            font-family: 'Codystar', cursive;
-            font-family: 'Gamja Flower', cursive;
-            font-family: 'Kenia', cursive;
-            font-family: 'Raleway', sans-serif;
-            font-family: 'Red Rose', cursive;
-            font-family: 'Roboto', sans-serif;
-            border: 2px solid #ffffff;
+            font-size: 52px;
+            color: var(--gold);
+            cursor: pointer;
+            outline: none;
+            border: 2px solid var(--bgColor);
         }
 
         #conteudo {
@@ -42,7 +47,7 @@
             font-size: larger;
             font-weight: bold;
             font-family: "Arial", sans-serif;
-            border: 2px solid #ffffff;
+            border: 2px solid var(--bgColor);
         }
 
         .personagens {
@@ -52,7 +57,7 @@
         }
 
         .personagem {
-            background-color: rgba(27, 172, 172, 0.6);
+            background-color: var(--bgGray);
             padding: 30px;
             border-radius: 20px;
             max-width: calc(16.66% - 20px);
@@ -62,18 +67,18 @@
             font-family: "Arial", sans-serif;
             margin-bottom: 20px;
             cursor: pointer;
-            border: 2px solid #ffffff;
+            border: 2px solid var(--bgColor);
         }
 
         .personagem img {
             max-width: 100%;
             height: auto;
-            border: 2px solid #ffffff;
+            border: 2px solid var(--bgColor);
         }
 
         .texto {
-            background-color: rgba(27, 172, 172, 0.6);
-            color: rgb(0, 0, 0);
+            background-color: var(--bgGray);
+            color: var(--gold);
             padding: 30px;
             margin: 10px;
             border-radius: 20px;
@@ -87,7 +92,7 @@
             font-family: 'Raleway', sans-serif;
             font-family: 'Red Rose', cursive;
             font-family: 'Roboto', sans-serif;
-            border: 2px solid #ffffff;
+            border: 2px solid var(--bgColor);
         }
 
         .lightbox {
@@ -97,7 +102,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: rgba(0, 0, 0, 0.7);
+            background: var(--bgColor);
             z-index: 1;
             text-align: center;
         }
@@ -111,7 +116,7 @@
         }
 
         .video {
-            background-color: rgba(27, 172, 172, 0.6);
+            background-color: var(--bgGray);
             padding: 20px;
             border-radius: 20px;
             max-width: 880px;
@@ -121,7 +126,7 @@
             font-family: "Arial", sans-serif;
             margin-bottom: 20px;
             cursor: pointer;
-            border: 2px solid #ffffff;
+            border: 2px solid var(--bgColor);
         }
 
         .close {
@@ -140,49 +145,44 @@
             font-weight: bold; 
             position: center; 
             cursor: pointer;
-            border: 2px solid #ffffff;
+            border: 2px solid var(--bgColor);
         }
 
         .voltar {
-            background-color: rgba(27, 172, 172, 0.6);
-            padding: 20px;
+            background-color: var(--bgGray);
+            padding: 10px 70px 10px 70px;
             border-radius: 20px;
-            margin: 0 auto;
-            max-width: 30%;
+            margin-left: 10px;
+            margin-top: 10px;
+            max-width: 50%;
             text-align: center;
-            font-size: 28px;
-            font-family: 'Arimo', sans-serif;
-            font-family: 'Codystar', cursive;
-            font-family: 'Gamja Flower', cursive;
-            font-family: 'Kenia', cursive;
-            font-family: 'Raleway', sans-serif;
-            font-family: 'Red Rose', cursive;
-            font-family: 'Roboto', sans-serif;
-            border: 2px solid #ffffff;
+            font-size: 22px;
+            color: var(--gold);
+            cursor: pointer;
+            outline: none;
+            border: 2px solid var(--bgColor);
         }
 
-        .github {
-            background-image: url(imagens/background-left-right.png);
-            padding: 10px;
+        .download {
+            background-color: var(--bgColor);
+            padding: 10px 10px 10px 10px;
             border-radius: 20px;
             margin-left: 140px;
-            margin-top: 70px;
+            margin-top: 20px;
             max-width: 70%;
             text-align: center;
-            font-size: 28px;
-            font-family: 'Arimo', sans-serif;
-            font-family: 'Codystar', cursive;
-            font-family: 'Gamja Flower', cursive;
-            font-family: 'Kenia', cursive;
-            font-family: 'Raleway', sans-serif;
-            font-family: 'Red Rose', cursive;
-            font-family: 'Roboto', sans-serif;
-            border: 2px solid #ffffff;
+            font-size: 22px;
+            color: var(--gold);
+            cursor: pointer;
+            outline: none;
+            border: 2px solid var(--bgColor);
         }
 
-        a:visited {
-        color: rgb(0, 0, 0);
-        }
+        
+
+
+
+
     </style>
 </head>
 <body>
@@ -262,13 +262,14 @@
                     
                 <p>No entanto, você tem um limite de vidas. Cada vez que você erra a separação, você perde uma vida. Mantenha-se atento e tome decisões conscientes para evitar perder todas as vidas.</p>
 
-                <h3 class="github"><a href="https://github.com/rodrigodagama/Projetos_CPDI-LUA/tree/main/projetoFinal02" target="_blank">GitHub: Jogo Recycle Master (Projeto Final LUA)</a></h3>
+                <a download href="../projetoFinal02/APP/Android/Recycle Master.apk"><button class="download">Download: Jogo Recycle Master (Android)</button>
+                </a>
             </p>
         </div>
 
     </div>
 
-    <h2 class="voltar"><a href="https://rodrigodagama.github.io/Projetos_CPDI/Website%20-%20ProjetoFinal/">Voltar</a></h2>
+    <a href="https://rodrigodagama.github.io/Projetos_CPDI/Website%20-%20ProjetoFinal/"><button class="voltar">Voltar</button></a>
 
     <div class="lightbox" id="lightbox">
         <img id="lightbox-image" src="" alt="Imagem Ampliada">
