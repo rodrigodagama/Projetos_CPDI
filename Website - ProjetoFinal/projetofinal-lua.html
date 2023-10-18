@@ -70,6 +70,25 @@
             border: 2px solid var(--bgColor);
         }
 
+        .personagem:visited {
+            background-color: var(--gold);
+            color: var(--gold);
+            border: 1px solid rgba(0, 0, 139, 0.336);
+        }
+
+        .personagem:hover {
+            background-color: rgba(0, 0, 139, 0.336);
+            color: rgba(255, 255, 255, 0.336);
+        }
+
+        .personagem::after {
+            content: '';
+            margin-top: 1em;
+            width: 2em;
+            height: 0.1em;
+            background-color: var(--softGray);
+        }
+
         .personagem img {
             max-width: 100%;
             height: auto;
@@ -163,6 +182,25 @@
             border: 2px solid var(--bgColor);
         }
 
+        .voltar:visited {
+            background-color: var(--gold);
+            color: var(--gold);
+            border: 1px solid rgba(0, 0, 139, 0.336);
+        }
+
+        .voltar:hover {
+            background-color: rgba(0, 0, 139, 0.336);
+            color: rgba(255, 255, 255, 0.336);
+        }
+
+        .voltar::after {
+            content: '';
+            margin-top: 1em;
+            width: 2em;
+            height: 0.1em;
+            background-color: var(--softGray);
+        }
+
         .download {
             background-color: var(--bgColor);
             padding: 10px 10px 10px 10px;
@@ -178,10 +216,24 @@
             border: 2px solid var(--bgColor);
         }
 
-        
+        .download:visited {
+            background-color: var(--gold);
+            color: var(--gold);
+            border: 1px solid rgba(0, 0, 139, 0.336);
+        }
 
+        .download:hover {
+            background-color: rgba(0, 0, 139, 0.336);
+            color: rgba(255, 255, 255, 0.336);
+        }
 
-
+        .download::after {
+            content: '';
+            margin-top: 1em;
+            width: 2em;
+            height: 0.1em;
+            background-color: var(--softGray);
+        }
 
     </style>
 </head>
