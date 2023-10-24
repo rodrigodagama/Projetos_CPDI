@@ -45,6 +45,7 @@ Agradecimentos:
 
 CPDI - Comitê para Democratização da Informática
 Professora: Juliana Oliveira
+Professora: Maria Eduarda 
 Coordenadora: Cleusa Kreusch
 Assistente Social: Neida Silveira]],
         x = 0,
