@@ -30,7 +30,7 @@ local function onTrashCollected(trash)
         end
     end
 
-    if score >= 50 then
+    if score >= 100 then
         composer.gotoScene("introScene03")
     end
 end
@@ -103,14 +103,14 @@ local function onTruckTouch(event)
 end
 
 local function gameLoop()
-    -- Verificar colisões em intervalos regulares
+    
     checkCollisions()
 end
 
 function scene:create(event)
     local sceneGroup = self.view
 
-    -- Criação do plano de fundo (background)
+    
     local street2 = display.newImageRect(sceneGroup, "imagens/street2.jpg", 1024/2, 1024/2)
     street2.x = display.contentCenterX 
     street2.y = display.contentCenterY

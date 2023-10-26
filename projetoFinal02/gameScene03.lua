@@ -38,7 +38,7 @@ local function onCestaTap(event)
             pontuacao = pontuacao + 10
             pontuacaoText.text = "Pontuação: " .. pontuacao
             
-            if pontuacao >= 50 then
+            if pontuacao >= 100 then
                 composer.gotoScene("congratulationsScene", { effect = "fade", time = 500 })
             end
             

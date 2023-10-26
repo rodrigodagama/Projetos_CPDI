@@ -18,7 +18,7 @@ local function gerarBolaAleatoria(sceneGroup)
     end
     
     if isBolaPapel(bolaAleatoria) then
-        local chanceBolaPapel1 = 0.2 -- 20% de chance de ser "bola_papel1.png"
+        local chanceBolaPapel1 = 0.2 
         if math.random() <= chanceBolaPapel1 then
             bolaAleatoria = "imagens/bola_papel1.png"
         end
@@ -44,7 +44,7 @@ local function onCestaTap(event)
             end
             
             -- Verifica se a pontuação é maior ou igual a 100 para ir para a fase 2 (gameScene02)
-            if pontuacao >= 50 then
+            if pontuacao >= 100 then
                 composer.gotoScene("introScene02", { effect = "fade", time = 500 })
             end
             
