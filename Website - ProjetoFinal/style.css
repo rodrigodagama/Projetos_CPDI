@@ -310,7 +310,6 @@ footer {
 	color: #fff;
 }
 
-
 @media screen and (max-width: 600px) {
     .navbar ul {
         flex-wrap: wrap;
