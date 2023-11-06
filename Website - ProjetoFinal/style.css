@@ -375,13 +375,13 @@ footer {
         background-image: url(imagens/SGS\ Students\ Game\ Studio1.png);
         background-size: cover;
         background-position: center;
-        display: center;
-        flex-direction: row;
-        align-items: center;
         text-align: center;
         font-size: 11px;
         height: 60px;
+        max-width: 80%; /* Defina o valor desejado */
+        margin: 0 auto; /* Centralize horizontalmente */
     }
+    
     
     .social-icons a {
         color: #0077B5;
