@@ -366,7 +366,7 @@ footer {
         padding: 15px;
         border-radius: 10px;
         margin: 0 auto 10px;
-        max-width: 100%;
+        max-width: 80%;
         text-align: center;
         font-size: 0.5em;
     }
@@ -380,7 +380,7 @@ footer {
         align-items: center;
         text-align: center;
         font-size: 11px;
-        height: 20px;
+        height: 60px;
     }
     
     .social-icons a {
