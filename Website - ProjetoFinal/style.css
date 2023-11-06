@@ -371,6 +371,17 @@ footer {
         font-size: 0.5em;
     }
 
+    .dev-name1 {
+        background-color: var(--bgGray);
+        color: var(--gold);
+        padding: 15px;
+        border-radius: 10px;
+        margin: 0 auto 10px;
+        max-width: 30%;
+        text-align: center;
+        font-size: 0.5em;
+    }
+
     .dev-title {
         background-image: url(imagens/SGS\ Students\ Game\ Studio1.png);
         background-size: cover;
@@ -378,8 +389,8 @@ footer {
         text-align: center;
         font-size: 11px;
         height: 60px;
-        max-width: 100%; /* Defina o valor desejado */
-        margin: 0 auto; /* Centralize horizontalmente */
+        max-width: 100%; 
+        margin: 0 auto; 
     }
     
     
