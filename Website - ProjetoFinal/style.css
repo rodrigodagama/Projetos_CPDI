@@ -330,7 +330,12 @@ footer {
     }
 }
 
-
+@media screen and (max-width: 600px) {
+    .dev img {
+        width: 100px; /* Adjust the size as needed */
+        height: 100px; /* Adjust the size as needed */
+    }
+}
 
 @media screen and (min-width: 800px){
 
