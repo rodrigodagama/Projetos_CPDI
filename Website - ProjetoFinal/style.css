@@ -330,7 +330,7 @@ footer {
     }
 
     .banner {
-        width: 50%;
+        width: 100%;
         min-height: 50vh;
         background-image: url(imagens/SGS\ Students\ Game\ Studio5.png);
         background-size: cover;
