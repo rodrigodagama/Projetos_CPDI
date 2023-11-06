@@ -378,7 +378,7 @@ footer {
         text-align: center;
         font-size: 11px;
         height: 60px;
-        max-width: 80%; /* Defina o valor desejado */
+        max-width: 100%; /* Defina o valor desejado */
         margin: 0 auto; /* Centralize horizontalmente */
     }
     
