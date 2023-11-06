@@ -388,8 +388,8 @@ footer {
         font-size: 20px;
         background-color: var(--bgGray);
         color: var(--gold);
-        padding: 20px;
-        border-radius: 20px;
+        padding: 10px;
+        border-radius: 10px;
         margin: 5px auto 5px;
         max-width: 60%;
     }
