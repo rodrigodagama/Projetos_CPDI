@@ -375,7 +375,10 @@ footer {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
         grid-column-gap: 20px;
-        max-width: 100%;
+        max-width: 100%;.dev img {
+        width: 20px; 
+        height: 20px; 
+    }
         padding: 10px;
     }
 
