@@ -329,9 +329,35 @@ footer {
         display: block;
     }
 
+    .banner {
+        width: 100%;
+        min-height: 100vh;
+        background-image: url(imagens/SGS\ Students\ Game\ Studio5.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .devs-container {
+        background-image: url(imagens/bgRecycleMaster.jpeg);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        height: 280px;
+    }
+
     .dev img {
-        width: 20px; 
-        height: 20px; 
+        width: 50px; 
+        height: 50px; 
     }
 
     .dev-name {
